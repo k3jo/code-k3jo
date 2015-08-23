@@ -1,0 +1,46 @@
+// SPLASH STYLES
+
+h1 {
+	font-family: 'Montserrat', sans-serif;
+	color:black;
+	font-size:100px;
+	margin:0;
+}
+.splash {
+	@include section;
+	// background: url(images/mountains.jpeg) no-repeat;
+	// background-size:contain; 
+}
+.splash-content {
+	@include section-child;
+}
+.social-media-container {
+	margin-bottom:5px;
+	.fa {
+		color:black;
+		font-size:20px;
+		margin-right:7px;
+		&:hover, &:focus {
+			color:mediumslateblue;
+		}
+		// border:1px solid black;
+	}
+	img{
+	width:4%;
+	margin-right:5px;
+	}
+}
+.hello {
+	font-family: 'Open Sans', sans-serif;
+	font-size:30px;
+}
+.about-headline {
+	font-family: 'Open Sans', sans-serif;
+	font-size:27px;
+}
+
+
+
+
+
+

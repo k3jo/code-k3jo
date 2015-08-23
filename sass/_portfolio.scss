@@ -1,0 +1,25 @@
+// PORTFOLIO STYLES
+
+.portfoliobox {
+	background: rgba(25,25,112, 0.85);
+	color:white;
+	padding:2%;
+	display:flex;
+	margin-bottom:10px;
+	font-family: 'Open Sans', sans-serif;
+}
+.portfoliobox-content {
+	flex-direction:column;
+	flex-wrap:wrap;
+	margin-right:3%;
+	h3 {
+		color:red;
+		font-family: 'Open Sans', sans-serif;
+		font-weight:600;
+		font-size:30px;
+	}
+	img {
+		width:300px;
+		margin-right:3%;
+	}
+}

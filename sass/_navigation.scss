@@ -1,0 +1,52 @@
+// NAVIGATION STYLES
+// .nav-wrapper {
+// 	background:cyan;
+// }
+ul.menu {
+	margin: 0;
+	padding: 0;
+	position:fixed;
+	right:100px;
+	li {
+		display: block;
+		margin-right: 10px;
+		
+		a {
+			color: black;
+			padding: 10px;
+			text-align:right;
+			display:block;
+			font-size:26px;
+			// effect starts below
+			vertical-align: middle;
+			-webkit-transform: translateZ(0);
+			transform: translateZ(0);
+			box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+			-webkit-backface-visibility: hidden;
+			backface-visibility: hidden;
+			-moz-osx-font-smoothing: grayscale;
+			position: relative;
+			overflow: hidden;
+
+		}
+	}
+}
+li a:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  background: #333;
+  height: 5px;
+  -webkit-transition-property: right;
+  transition-property: right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+li a:hover:before, a:focus:before, a:active:before {
+  right: 0;
+}

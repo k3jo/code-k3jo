@@ -1,0 +1,21 @@
+// VARIABLES STYLES
+
+h2 {
+	font-family: 'Open Sans', sans-serif;
+}
+.wrapper {
+	max-width:1200px;
+	width: 90%;
+}
+
+@mixin section{
+	height:100vh;
+	display:flex;
+	align-items:flex-end;
+	flex-wrap:wrap;
+	padding-bottom:10%;
+}
+@mixin section-child{
+	// flex-direction:row;
+
+}
