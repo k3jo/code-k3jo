@@ -1,5 +1,15 @@
 // RESPONSIVE STYLES
 
-@media (max-width:450px){
-	
+@media (max-width:700px){
+	ul.menu li {
+		display:inline;
+		a {
+			display:inline;
+			font-size:17px;
+		}
+	}
+	.portfoliocontent {
+		width: 100%;
+
+	}
 }

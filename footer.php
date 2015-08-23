@@ -1,5 +1,7 @@
 <footer>
   <div class="container">
+
+  <div class="wrapper clearfix">
   	<div class="social-media-container float-left">
   	  <a href="http://linkedin.com/in/heyjoanneho" class="bounce">
   	    <i class="fa fa-linkedin"></i>
@@ -14,8 +16,9 @@
   	  </a>
 
   	</div> <!-- end of social-media-container -->
-    <p class="float-right">&copy; Crafted by Joanne <?php echo date('Y'); ?></p>
-  </div>
+    <p class="float-right">&copy; JOANNEHO.IO <?php echo date('Y'); ?></p>
+  </div> <!-- nd of social-media-container float-left -->
+  </div> <!-- end of wrapper clearfix -->
 </footer>
 
 <script>

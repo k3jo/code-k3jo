@@ -24,12 +24,8 @@
 <body <?php body_class(); ?>>
 
 <header>
-  <div class="container">
-<!--     <h1>
-      <a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'name', 'display' ); ?>" rel="home">
-        <?php bloginfo( 'name' ); ?>
-      </a>
-    </h1> -->
+  <div class="container fixed">
+
     <!-- <div class="nav-wrapper"> -->
        <?php wp_nav_menu( array(
         'container' => false,

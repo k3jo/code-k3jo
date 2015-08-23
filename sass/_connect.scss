@@ -1,8 +1,9 @@
 // CONNECT STYLES
 
-
+.connectbox {
+	@include box-width;
+}
 // FORM
-
 .wpcf7 {
 	background: $lightgray;
 	padding:2%;

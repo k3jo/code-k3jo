@@ -11,7 +11,7 @@
       <!-- START OF SPLASH -->
       <section class="splash">
         <!--<img src="<?php bloginfo('template_directory'); ?>/images/mountains.jpeg" alt="mountain background"> -->
-        <!-- <div class="wrapper clearfix"> -->
+        <div class="wrapper clearfix">
 
           <div class="splash-content">
             <div class="splash-inner">
@@ -36,7 +36,7 @@
                 <h1>Joanne Ho</h1>
             </div> <!-- end of splash-inner -->
            </div> <!-- end of splash-content -->
-          <!-- </div> end of wrapper clearfix -->
+          </div> <!-- end of wrapper clearfix -->
       </section> <!-- end of SPLASH -->
       <!-- ================================ -->
       <!-- START OF ABOUT -->
@@ -51,22 +51,26 @@
       </section><!-- end of about -->
       <!-- ================================ -->
       <section class="work">
-        <!-- <div class="wrapper clearfix"> -->
+        <div class="wrapper clearfix">
           <div class="line"></div>
           <h2 id="work">Portfolio</h2>
+          <div class="work-content clearfix">
           
-          <?php get_template_part( 'loop', 'portfolio' ); ?>
-        <!-- </div> --><!--  end of wrapper clearfix -->
+            <?php get_template_part( 'loop', 'portfolio' ); ?>
+          </div>
+        </div> <!--  end of wrapper clearfix -->
       </section> <!-- end of work -->
 
       <!-- ================================= -->
       <!-- START OF CONNECT -->
       <section class="connect">
-        <!-- <div class="wrapper clearfix"> -->
+        <div class="wrapper clearfix">
           <div class="line"></div>
           <h2 id="connect">Connect</h2>
-          <?php echo do_shortcode('[contact-form-7 id="45" title="Contact form 1"]'); ?>
-        <!-- </div> --> <!-- end of wrapper clearfix -->
+          <div class="connectbox">
+            <?php echo do_shortcode('[contact-form-7 id="45" title="Contact form 1"]'); ?>
+          </div> <!-- end of connectbox -->
+        </div> <!-- end of wrapper clearfix -->
       </section> <!-- end of connect -->
       <!-- ================================= -->
 

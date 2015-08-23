@@ -1,17 +1,18 @@
 // PORTFOLIO STYLES
-
+.work-content {
+	display: -webkit flex;
+		display:flex;
+	flex-wrap:wrap;
+	-webkit-flex-direction: row;
+		flex-direction:row;
+}
 .portfoliobox {
-	background: $darkpurple;
-	color:white;
-	padding:2%;
-	display:flex;
-	margin-bottom:10px;
-	font-family: 'Open Sans', sans-serif;
+	@include box-width;
+	@include portfolio-box-styles;
 }
 .portfoliobox-content {
-	flex-direction:column;
-	flex-wrap:wrap;
-	margin-right:3%;
+	// @include portfolio-box-styles;
+	// margin-right:3%;
 	h3 {
 		color:white;
 		font-family: 'Open Sans', sans-serif;
@@ -19,7 +20,15 @@
 		font-size:30px;
 	}
 	img {
-		width:300px;
-		margin-right:3%;
+		width:100%;
 	}
+}
+.pc-01 {
+	width:37%;
+	margin-right:3%;
+	float:left;
+}
+.pc-02 {
+	width:60%;
+	float:left;
 }

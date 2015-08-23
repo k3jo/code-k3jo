@@ -14,15 +14,15 @@ $onePageQuery = new WP_Query(
 	<?php while ($onePageQuery->have_posts()) : $onePageQuery->the_post(); ?>
 
 		<section id="<?php echo $post->post_name; ?>">
-			<div class="portfoliobox">
+			<div class="portfoliobox clearfix">
 				
 				<div class="portfoliobox-content pc-01">
 					<?php if( get_field('project_image') ): ?>
 						<img src="<?php the_field('project_image'); ?>" alt="" />
-					<?php endif; ?>
-					
+					<?php endif; ?>					
 				</div> <!-- end of portfoliobox-content -->
-				<div class="portfoliobox-content">
+
+				<div class="portfoliobox-content pc-02">
 					<h3><?php the_field('project_title'); ?></h3>
 					<p><?php the_field('project_description'); ?></p>
 					<h4><?php the_field('project_technologies'); ?></h4>

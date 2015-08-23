@@ -6,4 +6,12 @@ footer {
 }
 .float-right{
 	float:right;
+	font-family: 'Open Sans', sans-serif;
+	font-size:9px;
+	color:gray;
+	p {
+		margin:0;
+		line-height:0;
+	}
+
 }

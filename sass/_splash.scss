@@ -8,12 +8,11 @@ h1 {
 }
 .splash {
 	@include section;
-	// background: url(images/mountains.jpeg) no-repeat;
-	// background-size:contain; 
+	background: url(images/mountains2.jpg) no-repeat;
+	background-size:cover; 
+	background-attachment:fixed;
 }
-.splash-content {
-	@include section-child;
-}
+
 .social-media-container {
 	margin-bottom:5px;
 	.fa {

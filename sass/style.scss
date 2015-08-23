@@ -29,20 +29,26 @@ Default Styling
 // }
 
 body {
-	color: #333;
-	background: url(images/mountains2.jpg) no-repeat;
-	background-size:contain; 
+	color: black;
+	// background: white;
+	// background: url(images/mountains2.jpg) no-repeat;
+	// background-size:cover; 
+	// background-attachment:fixed;
 }
 
 .container {
-	max-width: 1200px;
+	max-width: 1300px;
 	margin: 0 auto;
 }
-
+.fixed {
+	position:fixed;
+	right:100px;
+}
 .content {
 	float: left;
-	width: 65%;
-	margin-right: 5%;
+	width: 100%;
+	// width: 65%;
+	// margin-right: 5%;
 }
 
 .full {

@@ -7,20 +7,33 @@ $darkpurple: rgba(46, 26, 80, 1);
 $lightgray: rgba(210,208,212,1);
 
 .wrapper {
+	margin:0 auto;
 	max-width:1200px;
-	width: 90%;
+	width: 98%;
 }
 
 @mixin section{
 	height:100vh;
-	display:flex;
-	align-items:flex-end;
+	display: -webkit flex;
+		display:flex;
+	-webkit-align-items: flex-end;
+		align-items:flex-end;
 	flex-wrap:wrap;
 	padding-bottom:10%;
 }
-@mixin section-child{
-	// flex-direction:row;
+// PORTFOLIO & CONNECT STYLES
+@mixin box-width {
+	width: 60%;
+}
 
+
+// PORTFOLIO STYLES
+@mixin portfolio-box-styles {
+	background: $darkpurple;
+	color:white;
+	padding:2%;
+	margin-bottom:10px;
+	font-family: 'Open Sans', sans-serif;
 }
 
 // CONNECT MIXINS
