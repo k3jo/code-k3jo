@@ -1,15 +1,24 @@
 // CONNECT STYLES
 
+
+// FORM
+
 .wpcf7 {
-	background: lightcyan;
+	background: $lightgray;
 	padding:2%;
+	// position:relative;
+	p {
+		font-family:'Open Sans', sans-serif;
+		font-size:14px;
+		// position:absolute;
+	}
 }
 .wpcf7-form p {
 	// float:left;
 	display:inline-block;
 }
 .wpcf7-form p:nth-child(3n){
-	color:red;
+	// color:red;
 }
 .wpcf7-form p:nth-child(4n){
 	color:red;
@@ -18,16 +27,27 @@
 }
 // MSG BOX
 .wpcf7-form p:nth-child(5n){
-	color:blue;
+	// color:blue;
 	width: 100%;
 }
 .wpcf7-textarea {
 	width: 100%;
+	background: none;
+	border-bottom:2px solid black;
+	&:hover {
+		@include connect-hover;
+	}
 }
 // ======
+
+// Inputs
 .wpcf7-form p:nth-child(6n) input {
 	width:100%;
 }
 input {
 	width: 80%;
+	@include input;
+	&:hover {
+		@include connect-hover;
+	}
 }

@@ -3,6 +3,9 @@
 h2 {
 	font-family: 'Open Sans', sans-serif;
 }
+$darkpurple: rgba(46, 26, 80, 1);
+$lightgray: rgba(210,208,212,1);
+
 .wrapper {
 	max-width:1200px;
 	width: 90%;
@@ -18,4 +21,15 @@ h2 {
 @mixin section-child{
 	// flex-direction:row;
 
+}
+
+// CONNECT MIXINS
+@mixin input {
+	background:none;
+	border:none;
+	border-bottom:2px solid black;
+}
+@mixin connect-hover {
+	background: whitesmoke;
+	transition:1s;
 }

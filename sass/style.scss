@@ -17,6 +17,7 @@
 @import 'sidebar';
 @import 'comments';
 @import 'footer';
+@import 'responsive';
 /*
 ====================================
 Default Styling
@@ -31,7 +32,6 @@ body {
 	color: #333;
 	background: url(images/mountains2.jpg) no-repeat;
 	background-size:contain; 
-	// background: linear-gradient(#EFDDC9 50%,#A4B7C2);
 }
 
 .container {
