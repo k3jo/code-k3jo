@@ -2,9 +2,39 @@
 // .nav-wrapper {
 // 	background:cyan;
 // }
-ul.menu {
+.responsive-header {
+	display:none;
+	position:fixed;
+	z-index:30;
+	text-align:center;
+	ul.menu {
+		margin:0;
+		padding:0;
+		li {
+			display:inline-block;
+			margin-right: 10px;
+			a {
+				font-family:'Open Sans', sans-serif;
+				font-weight:400;
+				color: black;
+				padding: 10px 0;
+				text-align:left;
+				display:block;
+				font-size:26px;
+				line-height:15px;
+			}
+		}
+	}
+}
+.default-header {
+	right:100px;
+}
+.default-header ul.menu {
+
 	margin: 0;
 	padding: 0;
+	margin-right:50px;
+	margin-top:20px;
 	// position:fixed;
 	// right:100px;
 	li {
@@ -12,11 +42,14 @@ ul.menu {
 		margin-right: 10px;
 		
 		a {
+			font-family:'Open Sans', sans-serif;
+			font-weight:400;
 			color: black;
-			padding: 10px;
-			text-align:right;
+			padding: 10px 0;
+			text-align:left;
 			display:block;
 			font-size:26px;
+			line-height:15px;
 			// effect starts below
 			vertical-align: middle;
 			-webkit-transform: translateZ(0);
@@ -49,4 +82,9 @@ li a:before {
 }
 li a:hover:before, a:focus:before, a:active:before {
   right: 0;
+}
+.fixed {
+	position:fixed;
+
+	z-index:100;
 }

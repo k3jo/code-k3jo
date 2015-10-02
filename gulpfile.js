@@ -3,7 +3,7 @@ var gulp   = require('gulp'),
 		autoprefixer = require('gulp-autoprefixer'),
 		concat = require('gulp-concat');
 
-gulp.task('default', ['styles', 'watch']);
+gulp.task('default', ['styles', 'watch', 'autoprefixer']);
 
 gulp.task('styles', function() {
 	return gulp.src('sass/**/*.scss')
@@ -11,6 +11,7 @@ gulp.task('styles', function() {
 			'sourcemap=none': true,
 			errLogToConsole: true
 		}))
+		.pipe(autoprefixer('last 2 version'))
 		.pipe(concat('style.css'))
 		.pipe(gulp.dest('.'));
 });

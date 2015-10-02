@@ -1,34 +1,67 @@
 // PORTFOLIO STYLES
-.work-content {
-	display: -webkit flex;
-		display:flex;
-	flex-wrap:wrap;
-	-webkit-flex-direction: row;
-		flex-direction:row;
+h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight:300;
 }
+h4 {
+	font-family: 'Open Sans', sans-serif;
+}
+
+
+// =====================
+// PORTFOLIO STYLES START
+.work {
+	background:linear-gradient(rgba(211, 211, 234, 0.7), rgba(106, 104, 119, 0.7)), url(images/mountains2.jpg) no-repeat; 
+	background-size:cover; 
+	background-attachment:fixed;
+	padding-top:10px;
+  padding-bottom:10px;
+}
+// .work-content:nth-child(last-child){
+//   padding-bottom:1%;
+// }
 .portfoliobox {
-	@include box-width;
-	@include portfolio-box-styles;
+  // border: 1px solid lightgray;
+  width:80%;
+  margin-bottom:10vh;
 }
-.portfoliobox-content {
-	// @include portfolio-box-styles;
-	// margin-right:3%;
-	h3 {
-		color:white;
-		font-family: 'Open Sans', sans-serif;
-		font-weight:600;
-		font-size:30px;
-	}
-	img {
-		width:100%;
-	}
+.portfoliobox img {
+  width:63%;
+  float:right;
 }
-.pc-01 {
-	width:37%;
-	margin-right:3%;
-	float:left;
+.pc-container {
+  position:relative;
 }
 .pc-02 {
-	width:60%;
-	float:left;
+  background:rgb(82,74,95);
+  color:white;
+  width:35%;
+  padding:2%;
+  float:left;
+  // position:absolute;
+  // bottom:-10%;
+  // z-index:40;
 }
+.pc-03 {
+   width:63%;
+  float:right;
+  clear:both;
+  margin-bottom:20px;
+}
+.pc-03 p {
+  line-height:1.4;
+}
+button {
+  border: 1px solid black;
+  color: black;
+  padding: 5px 20px;
+  background: transparent;
+  font-size: 12px;
+  font-family: 'Open Sans', sans-serif;
+  &:hover {
+    @include connect-hover;
+  }
+}
+
+
+

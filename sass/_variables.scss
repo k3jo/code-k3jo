@@ -3,33 +3,42 @@
 h2 {
 	font-family: 'Open Sans', sans-serif;
 }
+$dustypurple: rgb(82,74,95);
 $darkpurple: rgba(46, 26, 80, 1);
 $lightgray: rgba(210,208,212,1);
+$about-gray: #F6F6F7;
 
 .wrapper {
 	margin:0 auto;
 	max-width:1200px;
-	width: 98%;
+	width: 75%;
+}
+// LINE STYLE THAT APPEARS ON ALL PAGES
+@mixin line-style{
+	width: 40px;
+	border-top:5px solid black;
+	margin-top:1rem;
 }
 
 @mixin section{
 	height:100vh;
 	display: -webkit flex;
 		display:flex;
-	-webkit-align-items: flex-end;
-		align-items:flex-end;
+	-webkit-align-items: center;
+		align-items:center;
 	flex-wrap:wrap;
 	padding-bottom:10%;
 }
 // PORTFOLIO & CONNECT STYLES
 @mixin box-width {
-	width: 60%;
+	width: 80%;
+	padding:2% 2% 2% 0;
 }
 
 
 // PORTFOLIO STYLES
 @mixin portfolio-box-styles {
-	background: $darkpurple;
+	background: $dustypurple;
 	color:white;
 	padding:2%;
 	margin-bottom:10px;
@@ -43,6 +52,6 @@ $lightgray: rgba(210,208,212,1);
 	border-bottom:2px solid black;
 }
 @mixin connect-hover {
-	background: whitesmoke;
+	background: rgba(216, 216, 241, 0.4);
 	transition:1s;
 }

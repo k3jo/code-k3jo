@@ -1,12 +1,15 @@
 // CONNECT STYLES
-
+// .connect {
+// 	background-color: $about-gray;
+// 	background: url(http://www.transparenttextures.com/patterns/gplay.png);
+// }
 .connectbox {
 	@include box-width;
 }
 // FORM
 .wpcf7 {
-	background: $lightgray;
-	padding:2%;
+	// background: $lightgray;
+	// padding:2%;
 	// position:relative;
 	p {
 		font-family:'Open Sans', sans-serif;

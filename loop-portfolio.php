@@ -14,22 +14,32 @@ $onePageQuery = new WP_Query(
 	<?php while ($onePageQuery->have_posts()) : $onePageQuery->the_post(); ?>
 
 		<section id="<?php echo $post->post_name; ?>">
-			<div class="portfoliobox clearfix">
+
+
+<!-- ======== -->
+
+			<div class="portfoliobox clearfix slide-left">
+				<div class="pc-container clearfix">
+
+					<div class="portfoliobox-content pc-02 tile">
+					  <h3><?php the_field('project_title'); ?></h3>
+					</div> <!-- end of pc-02 -->
+
+				     <div class="portfoliobox-content pc-01 tile">
+				         <?php if( get_field('project_image') ): ?>
+				         	<img src="<?php the_field('project_image'); ?>" alt="" />
+				         <?php endif; ?>		
+				      </div> <!-- end of portfoliobox-content -->
+
+				</div> <!--end of pc-container clearfix-->
+			  
+			<div class="portfolio-content pc-03 tile">
+			  	<p><?php the_field('project_description'); ?></p>
+				<h4><?php the_field('project_technologies'); ?></h4>
+				<a href="<?php the_field('live_link') ?>" target="_blank"><button>See it Live</button></a>
+			</div>
 				
-				<div class="portfoliobox-content pc-01">
-					<?php if( get_field('project_image') ): ?>
-						<img src="<?php the_field('project_image'); ?>" alt="" />
-					<?php endif; ?>					
-				</div> <!-- end of portfoliobox-content -->
-
-				<div class="portfoliobox-content pc-02">
-					<h3><?php the_field('project_title'); ?></h3>
-					<p><?php the_field('project_description'); ?></p>
-					<h4><?php the_field('project_technologies'); ?></h4>
-				</div> <!-- end of portfolio-content -->
-
-				<!-- <p><?php the_content(); ?></p> -->
-			</div> <!-- end of portfoliobox -->
+			</div> <!-- end of portfoliobox clearfix -->
 			
 		</section>
 	<?php endwhile; ?>

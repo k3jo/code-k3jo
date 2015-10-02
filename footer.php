@@ -2,22 +2,17 @@
   <div class="container">
 
   <div class="wrapper clearfix">
-  	<div class="social-media-container float-left">
-  	  <a href="http://linkedin.com/in/heyjoanneho" class="bounce">
-  	    <i class="fa fa-linkedin"></i>
-  	  </a>
-  	  <a href="http://twitter.com/heyjoanneho" class="bounce">
-  	    <i class="fa fa-twitter"></i>
-  	    <!-- <img src="<?php bloginfo('template_directory'); ?>/images/twitter.png" alt="twitter icon" target="_blank"> -->
-  	  </a>
-  	  <a href="mailto:joanne.kwh@gmail.com" title="Send an Email" class="bounce">
-  	    <i class="fa fa-envelope"></i>
-  	    <!-- <img src="<?php bloginfo('template_directory'); ?>/images/email.png" alt="email icon" target="_blank"> -->
-  	  </a>
+    <div class="footer-container footer-float-right clearfix">
+    	<div class="social-media-container  clearfix">
+    	   <a href="http://linkedin.com/in/heyjoanneho" class="bounce"><i class="fa fa-linkedin"></i></a>
+    	   <a href="http://twitter.com/heyjoanneho" class="bounce"><i class="fa fa-twitter"></i></a>
+    	   <a href="mailto:joanne.kwh@gmail.com" title="Send an Email" class="bounce"><i class="fa fa-envelope"></i></a>   
+    	</div> <!-- end of social-media-container float-right -->
 
-  	</div> <!-- end of social-media-container -->
-    <p class="float-right">&copy; JOANNEHO.IO <?php echo date('Y'); ?></p>
-  </div> <!-- nd of social-media-container float-left -->
+    <div class="cp">
+      <p>&copy; JOANNEHO.IO <?php echo date('Y'); ?></p>
+    </div> <!-- end of float-right -->
+    </div> <!-- end of footer-container -->
   </div> <!-- end of wrapper clearfix -->
 </footer>
 
@@ -30,5 +25,11 @@
 </script>
 
 <?php wp_footer(); ?>
+
+
+<script>
+$(window).fadeThis();
+</script>
+
 </body>
 </html>

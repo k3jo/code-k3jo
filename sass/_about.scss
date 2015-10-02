@@ -1,0 +1,13 @@
+// ABOUT STYLES
+
+.about {
+  background-color: $about-gray;
+  background: url(http://www.transparenttextures.com/patterns/gplay.png);
+  padding-top:25px;
+}
+.about h2 {
+	margin-top:0;
+}
+.about-content {
+  @include box-width;
+}
